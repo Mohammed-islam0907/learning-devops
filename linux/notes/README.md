@@ -5,7 +5,7 @@
 ### echo is used to write in this file e.g. echo "Hello" > file.txt
 ### This will write Hello into file.txt
 
-## Add Users
+## Adding Users & giving sudo access
 ### ```sudo useradd newuser``` #### Adds user
 ### ```sudo passwd newuser``` #### Adds password
 
