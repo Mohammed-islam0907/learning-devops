@@ -31,4 +31,4 @@
 ### Octal (4+2+1) = 7
 
 ## Octal (chmod command)
-### chmod 400 : Read permission only = 400
+### ```chmod 400``` : Read permission only = 400
