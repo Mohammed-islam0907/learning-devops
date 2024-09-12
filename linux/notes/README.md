@@ -1,4 +1,4 @@
-# Linux notes
+# Linux Fundamentals notes
 
 ## touch & echo commands
 ### touch is used to create a file for e.g. ```touch file.txt```
