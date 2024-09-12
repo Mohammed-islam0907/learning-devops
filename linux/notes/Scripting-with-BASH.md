@@ -1,3 +1,4 @@
+## The 'Shebang' Line
 
-```!#/bin/bash``` The 'Shebang' Line allows you to 
+```#!/bin/bash``` tells computer to use bash script even if you are using zsh
 - 
