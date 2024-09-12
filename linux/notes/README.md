@@ -32,3 +32,9 @@
 
 ## Octal (chmod command)
 ### ```chmod 400``` : Read permission only = 400
+
+## Linux CLI Shortcuts
+```history``` command shows list of commands used
+- Then you can type in number you want to execute e.g. ```120``` will enter the command on line 120
+-  Ctr + r does a reverse search. Keep pressing it until you get command you're looking for.
+-  Press enter to execute or Ctrl + J to select command (without executing) 
