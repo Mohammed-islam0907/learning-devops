@@ -32,3 +32,14 @@
 
 ## Octal (chmod command)
 ### ```chmod 400``` : Read permission only = 400
+
+## Aliases
+- Shortcuts that allow you to make frequent commands
+- ```alias``` command shows list of commands
+- e.g. ```alias hello='echo "Hello World"' ``` - remember to ```source .zshrc```
+- When hello is called, "Hello WOrld is printed to the terminal"
+
+## Linux CLI Shortcuts!
+- ```history``` shows command history 
+- then lets sya you want to enter command in line 220 enter```!220```
+- Ctrl + R shows reverse history
