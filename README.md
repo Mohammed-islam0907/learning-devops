@@ -17,5 +17,4 @@ Hello! I'm Mohammed Islam, an aspiring DevOps Engineer, currently enrolled in a 
 - **Monitoring**
 - **Networking:** Expanding my understanding of network protocols, architecture, and troubleshooting.
 
-  ![MI (1)](https://github.com/user-attachments/assets/c2c68aeb-c25d-4206-8286-a895cb8c224a) 
-
+  
