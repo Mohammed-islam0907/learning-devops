@@ -21,17 +21,17 @@ for e.g. you want to add the numbers, and you have num1&num2 and they were both 
 
 ## e.g.
 
-num1=2
-num2=4
-result=$((num1+num2))
+```num1=2```
+```num2=4```
+```result=$((num1+num2))```
 
 ```echo "$num1 + $num2 is equal to $result"```
 
 ## Arithemtic expansion with **Parameters**
 
 ## e.g.
-- num1=$1
-num2=$2
-result=$((num$1+num$2))
+```num1=$1```
+```num2=$2```
+```result=$((num$1+num$2))```
 
 ```echo "$num$2 + $num$2 is equal to $result"```
