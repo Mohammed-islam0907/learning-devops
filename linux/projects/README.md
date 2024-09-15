@@ -97,3 +97,41 @@ ls to list all subdirectories under "inhere", which revealed multiple directorie
 
 ### Level 6 → Level 7 (15/09/2024)
 
+![level6-7](../../images/level6-7.png)
+
+### Level Goal
+The password for the next level is stored somewhere on the server and has all of the following properties:
+- Owned by user `bandit7`
+- Owned by group `bandit6`
+- 33 bytes in size
+
+### Steps Taken
+To achieve the goal, I followed these steps:
+
+1. **Handle Permission Errors:** Due to numerous 'permission denied' errors, I redirected these errors to `/dev/null` using `2>/dev/null` to keep things clean.
+   
+2. **Find Command Execution:** Executed the command to search for the file:
+   ```bash
+   find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+
+3. ```cat /var/lib/dpkg/info/bandit7.password``` 
+
+## Bandit Level 7 → Level 8
+
+![level7-8](../../images/level7-8.png)
+
+### Level Goal
+The password for the next level is stored in the file `data.txt` next to the word "millionth".
+
+### Steps Taken
+To retrieve the password, I followed these steps:
+
+1. **List Files:** First, I listed the files in the directory to confirm the presence of `data.txt`:
+   ```bash
+   ls
+2. ```grep "millionth" data.txt``` located the line containing the word "millionth", which had the password next to it 
+
+
+
+
+
