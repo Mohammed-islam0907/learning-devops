@@ -59,6 +59,41 @@ Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 ### Level 3 → Level 4 (15/09/2024)
 
+- ```cd inhere```: navigate to the directory named "inhere"
+- ```ls -la``` to list all contents of the directory, including hidden files
+- ```cat ...Hiding-From-You```
 
+**Password:** 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
+### Level 4 → Level 5 (15/09/2024)
+
+![Level4-5](../../images/Level4-5.png)
+
+- ```cd``` inhere to navigate into the directory "inhere".
+- ```ls``` to list the files in the directory, which revealed multiple files.
+- ```file ./*``` to determine the types of all files in the directory. This command showed that most files were of type "data", except for one, "file07", which was of type "ASCII text".
+- ```car ./file07``` displayed password
+
+**Password:** 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+<br>
+
+### Level 5 → Level 6 (15/09/2024)
+
+![5-6](../../images/level5-6.png)
+
+- ```cd``` inhere to enter the specified directory.
+ls to list all subdirectories under "inhere", which revealed multiple directories named "maybehereXX".
+
+- ```file ./*``` to confirm that all listed items were directories.
+
+- ```find . -size 1033c``` to locate files exactly 1033 bytes in size within these directories. This command returned "./maybehere07/.file2" as the match.
+
+- ```cat ./maybehere07/.file2``` to display the contents of the identified file, which held the password for the next level.
+
+**Password:** HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+<br>
+
+### Level 6 → Level 7 (15/09/2024)
 
