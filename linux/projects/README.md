@@ -131,7 +131,74 @@ To retrieve the password, I followed these steps:
    ls
 2. ```grep "millionth" data.txt``` located the line containing the word "millionth", which had the password next to it 
 
+<br>
+
+## Bandit Level 8 → Level 9
+
+![level8-9](../../images/level8-9.png)
+
+### Level Goal
+The password for the next level is stored in the file `data.txt` and is the only line of text that occurs only once.
+
+### Steps Taken
+1. **Check the File**:
+   - Confirmed the presence of `data.txt` with the command:
+     ```
+     ls
+     ```
+
+2. **Retrieve the Unique Line**:
+   - Executed the following command to identify the unique line:
+     ```
+     cat data.txt | sort | uniq -u
+     ```
+     - `cat data.txt` displays the contents of the file.
+     - Piped (`|`) the output to `sort` to order the lines alphabetically, a necessary step as `uniq` requires sorted input to work correctly.
+     - `uniq -u` filters out repeated lines, leaving only the unique line which contains the password.
+
+### Conclusion
+This method efficiently isolated the unique line in `data.txt`, using a streamlined combination of `cat`, `sort`, and `uniq -u`. This
 
 
+<br>
 
+## Bandit Level 9 → Level 10
+
+![level9-10](../../images/level9-10.png)
+
+### Level Goal
+The password for the next level is stored in the file `data.txt` and appears within one of the few human-readable strings, preceded by several '=' characters.
+
+### Steps Taken
+1. **Examine the File**:
+   - Used the following command to filter and display human-readable strings from `data.txt`, especially looking for strings preceded by '=':
+     ```
+     strings data.txt | grep '='
+     ```
+
+2. **Identify the Password**:
+   - From the output, identified the line clearly marked by multiple '=' characters before the password, making it distinct among other strings.
+
+
+<br>
+
+## Bandit Level 10 → Level 11
+
+![level10-11](../../images/l10-11.png)
+
+### Level Goal
+The password for the next level is stored in the file `data.txt`, which contains base64 encoded data.
+
+### Steps Taken
+1. **Check the File Content**:
+   - Displayed the contents of `data.txt` to confirm the presence of base64 encoded data:
+     ```
+     cat data.txt
+     ```
+
+2. **Decode the Data**:
+   - Used the `base64` command to decode the content and retrieve the human-readable password:
+     ```
+     cat data.txt | base64 -d
+     ```
 
