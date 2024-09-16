@@ -197,7 +197,7 @@ The password for the next level is stored in the file `data.txt`, which contains
      ```
 
 2. **Decode the Data**:
-   - Used the `base64` command to decode the content and retrieve the human-readable password:
+   - Used the `base64` command to decode the content and retrieve the password:
      ```
      cat data.txt | base64 -d
      ```
