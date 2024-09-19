@@ -6,8 +6,12 @@
 
 ## Variables
 - Allows you to store and manipulate data 
+- e.g. variable=name
 -  To access variable: ```$variable``` 
 - Can use variables within strings
+
+## Comments
+- Add explanation using #
 
 ## Parameters
 Inside .sh file:
@@ -35,3 +39,4 @@ for e.g. you want to add the numbers, and you have num1&num2 and they were both 
 - ```result=$((num$1+num$2))```
 
 ```echo "$num$2 + $num$2 is equal to $result"```
+
