@@ -441,7 +441,7 @@ The credentials for the next level can be retrieved by submitting the password o
      ```
 
 
-
+<br>
 
 ## Bandit Level 17 → Level 18
 
