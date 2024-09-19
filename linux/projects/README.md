@@ -202,3 +202,166 @@ The password for the next level is stored in the file `data.txt`, which contains
      cat data.txt | base64 -d
      ```
 
+<br>
+
+## Bandit Level 11 → Level 12
+
+![level11-12](../../images/l11-12.png)
+
+### Level Goal
+The password for the next level is stored in the file `data.txt`, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions, known as a ROT13 encryption.
+
+### Steps Taken
+1. **Examine the File**:
+   - Displayed the contents of `data.txt`:
+     ```bash
+     cat data.txt
+     ```
+
+2. **Decrypt ROT13**:
+   - Initially tried using the `tr` command incorrectly and received a syntax error:
+     ```bash
+     cat data.txt | tr (ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz) (NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm)
+     ```
+   - Correctly used the `tr` command to perform a ROT13 decryption:
+     ```bash
+     cat data.txt | tr ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm
+     ```
+   - This command translates each letter to its counterpart 13 characters ahead or behind in the alphabet, effectively decrypting the ROT13 encoding.
+
+<br>
+
+## Bandit Level 12 → Level 13 (No image to due being very long)
+
+
+### Level Goal
+The password for the next level is stored in the file `data.txt`, which is a hexdump of a file that has been repeatedly compressed. To retrieve the password, a series of decompression steps must be performed.
+
+### Steps Taken
+1. **Create a Working Directory**:
+   - Created a directory under `/tmp` to safely perform file operations:
+     ```bash
+     mkdir -p /tmp/idk
+     ```
+
+2. **Copy the Hexdump File**:
+   - Copied the `data.txt` file into the new directory:
+     ```bash
+     cp data.txt /tmp/idk
+     cd /tmp/idk
+     ```
+
+3. **Reverse the Hexdump**:
+   - Used `xxd -r` to reverse the hexdump and saved the output into a new file:
+     ```bash
+     xxd -r data.txt > bandit
+     ```
+
+4. **Identify File Type**:
+   - Determined the type of compression used on the reversed file:
+     ```bash
+     file bandit
+     ```
+
+5. **Decompress the File**:
+   - Since the file was compressed with gzip:
+     ```bash
+     mv bandit bandit.gz
+     gunzip bandit.gz
+     ```
+
+6. **Re-check File Type**:
+   - Checked the new file type and continued decompression:
+     ```bash
+     file bandit
+     mv bandit bandit.bz2
+     bzip2 -d bandit.bz2
+     file bandit
+     mv bandit bandit.gz
+     gunzip bandit.gz
+     file bandit
+     ```
+
+7. **Handle TAR Archive**:
+   - Decompressed the tar archive:
+     ```bash
+     mv bandit bandit.tar
+     tar -xf bandit.tar
+     file data5.bin
+     mv data5.bin data5.tar
+     tar -xf data5.tar
+     file data6.bin
+     mv data6.bin data6.bz2
+     bzip2 -d data6.bz2
+     file data6
+     mv data6 data6.tar
+     tar -xf data6.tar
+     file data8.bin
+     mv data8.bin data8.gz
+     gunzip data8.gz
+     file data8
+     ```
+
+8. **Retrieve Password**:
+   - Once the file type was determined to be ASCII text, the final password was extracted:
+     ```bash
+     cat data8
+     ```
+
+## Bandit Level 13 → Level 14
+
+### Level Goal
+The password for the next level is stored in `/etc/bandit_pass/bandit14` and can only be read by user bandit14. Instead of a password, you are provided with a private SSH key that allows you to log into the bandit14 user account on the localhost.
+
+### Steps Taken
+1. **Identify the SSH Key**:
+   - Upon logging in, identified a file named `sshkey.private` which is the SSH private key mentioned in the level description:
+     ```bash
+     ls
+     ```
+
+2. **Log in as bandit14**:
+   - Used the SSH private key to log into the bandit14 account on the localhost:
+     ```bash
+     ssh -i sshkey.private bandit14@localhost
+     ```
+   - The `-i` option specifies that the subsequent file is used as the identity file (private key) for SSH login.
+
+3. **Access the Password File**:
+   - After logging into the bandit14 user account, navigated to the directory containing the password file:
+     ```bash
+     cd /etc/bandit_pass/
+     ```
+   - Read the password file for bandit14:
+     ```bash
+     cat bandit14
+     ```
+
+<br>
+
+## Bandit Level 14 → Level 15
+
+![level14-15](../../images/level14-15.png)
+
+### Level Goal
+The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+
+### Steps Taken
+1. **Retrieve the Current Level's Password**:
+   - Accessed the password for the current level from the standard location:
+     ```bash
+     cat /etc/bandit_pass/bandit14
+     ```
+
+2. **Submit the Password via `nc` (Netcat)**:
+   - Used `nc` to connect to localhost on port 30000 and submitted the password:
+     ```bash
+     nc localhost 30000
+     ```
+   - After the connection was established, pasted the password and received the next level's password.
+
+
+
+
+
+
