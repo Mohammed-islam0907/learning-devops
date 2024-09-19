@@ -360,8 +360,110 @@ The password for the next level can be retrieved by submitting the password of t
      ```
    - After the connection was established, pasted the password and received the next level's password.
 
+<br>
+
+## Bandit Level 15 → Level 16
+
+![level 15-16](../../images/Level15/Screenshot%202024-09-18%20at%2020.43.40.png)
+![l15-16](../../images/Level15/Screenshot%202024-09-18%20at%2020.43.51.png)
+
+### Level Goal
+The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
+
+### Steps Taken
+1. **Establish a Secure Connection**:
+   - Used `openssl s_client` to establish a secure SSL/TLS connection to the server on port 30001:
+     ```bash
+     openssl s_client -connect localhost:30001
+     ```
+
+2. **Submit the Current Level's Password**:
+   - After successfully connecting, submitted the password of the current level through the secure channel. Noticed initial errors in command usage, which were corrected in subsequent attempts.
+   - Ensured connection details were correct, checking for any issues with SSL certificates, notably the certificate was self-signed which is common in test environments.
+
+3. **Receive the Next Level's Password**:
+   - Once the correct password was submitted, the server responded with the next level's password:
+     ```plaintext
+     ksKvUpMQ7lBYyCM4GBpVCvT1BfWRy0Dx
+     ```
 
 
 
 
+## Bandit Level 16 → Level 17
 
+![level 16-17](../../images/Level%2016-17/Screenshot%202024-09-18%20at%2020.58.40.png)
+
+![level 16-17](../../images/Level%2016-17/Screenshot%202024-09-18%20at%2021.21.59.png)
+
+![level 16-17](../../images/Level%2016-17/Screenshot%202024-09-18%20at%2021.22.22.png)
+
+![level 16-17](../../images/Level%2016-17/Screenshot%202024-09-18%20at%2021.23.07.png)
+
+![level 16-17](../../images/Level%2016-17/Screenshot%202024-09-18%20at%2021.23.36.png)
+
+
+### Level Goal
+The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. The task involves identifying which port is listening and specifically which one supports SSL/TLS, as only one server will provide the correct credentials.
+
+### Steps Taken
+1. **Identify Listening Ports**:
+   - Used `nmap` to scan the range of ports from 31000 to 32000 on localhost to identify which ports are open:
+     ```bash
+     nmap localhost -p 31046,31518,31691,31790,31960 -sV
+     ```
+
+2. **Test SSL/TLS Connection**:
+   - Attempted to connect using SSL/TLS to various ports to identify the correct service. For instance, tried connecting to port 31790:
+     ```bash
+     openssl s_client -connect localhost:31790
+     ```
+
+3. **Submit Password via SSL/TLS**:
+   - Once the correct SSL/TLS port was identified, submitted the current level's password using the `openssl s_client` command:
+     ```bash
+     echo "Current Level Password" | openssl s_client -quiet -connect localhost:31790
+     ```
+   - Received a response that included an RSA private key, indicating successful submission and receipt of the next level's credentials.
+
+4. **Save and Use RSA Key**:
+   - Saved the received RSA private key into a file for further use:
+     ```bash
+     nano /tmp/rsaprivate.key
+     ```
+   - Changed permissions for the private key file to ensure secure SSH login:
+     ```bash
+     chmod 600 /tmp/rsaprivate.key
+     ```
+   - Used the key to SSH into the next level:
+     ```bash
+     ssh -i /tmp/rsaprivate.key bandit17@localhost -p 2220
+     ```
+
+
+
+
+## Bandit Level 17 → Level 18
+
+![level 17-18](../../images/level%2017-18.png)
+
+
+### Level Goal
+The password for the next level is stored in `passwords.new` and is the only line that has been changed from `passwords.old`.
+
+### Steps Taken
+1. **List Available Files**:
+   - Checked the contents of the home directory to locate the files:
+     ```bash
+     ls
+     ```
+
+2. **Compare the Two Files**:
+   - Used the `diff` command to identify differences between `passwords.old` and `passwords.new`:
+     ```bash
+     diff passwords.old passwords.new
+     ```
+   - The `diff` command output showed which lines were different. The output format `> [line content]` indicated that these were lines from `passwords.new`.
+
+3. **Extract the Password**:
+   - The differing line from `passwords.new` provided the password for the next level
