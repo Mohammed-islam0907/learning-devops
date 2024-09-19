@@ -40,3 +40,16 @@ for e.g. you want to add the numbers, and you have num1&num2 and they were both 
 
 ```echo "$num$2 + $num$2 is equal to $result"```
 
+## if statement
+- start with ```if``` followed by condition to evluate
+-```then```
+-# Code block to be executed
+-ends with ``fi```
+ 
+- conditions and if statements formed with comparative operators:
+- eq = equals to
+- ne = not equal to 
+- lt = less than
+- gt = greater than
+- le = less/equal to
+-ge = greater/ equal to
