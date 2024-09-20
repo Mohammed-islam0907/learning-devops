@@ -46,10 +46,60 @@ for e.g. you want to add the numbers, and you have num1&num2 and they were both 
 -# Code block to be executed
 -ends with ``fi```
  
-- conditions and if statements formed with comparative operators:
+## conditions and if statements formed with comparative operators:
 - eq = equals to
 - ne = not equal to 
 - lt = less than
 - gt = greater than
 - le = less/equal to
--ge = greater/ equal to
+- ge = greater/ equal to
+
+<br>
+
+## Logical operators
+- && = AND
+- || = OR
+
+## Compare strings:
+- == equal  to
+- != Not equal to 
+
+## else and if
+- ```elif``` allows us to add another condition (just like what we do do with if)
+
+
+# Nested If Statements 
+
+Nested `if` statements are a powerful feature in Bash scripting that allow you to check for multiple conditions sequentially or hierarchically. This control structure is crucial for handling complex decision-making processes where multiple layers of conditions must be evaluated.
+
+## Basic Syntax
+
+A nested `if` statement is essentially an `if` statement inside another `if` statement. Here's the basic structure:
+
+```bash
+if [ condition1 ]; then
+    # Commands to execute if condition1 is true
+    if [ condition2 ]; then
+        # Commands to execute if both condition1 and condition2 are true
+    else
+        # Commands to execute if condition1 is true but condition2 is not
+    fi
+else
+    # Commands to execute if condition1 is not true
+fi
+```
+
+## While Loops in Bash Scripting
+
+`while` loops are an essential control structure in Bash scripting, used to repeatedly execute a block of code as long as a specified condition remains true. They are particularly useful for tasks that need to continue until a certain condition changes, such as monitoring system statuses or processing user input.
+
+## Basic Syntax
+
+The basic syntax of a `while` loop in Bash is:
+
+```bash
+while [ condition ]
+do
+    # Commands to execute repeatedly
+done
+```
