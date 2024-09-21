@@ -102,4 +102,32 @@ while [ condition ]
 do
     # Commands to execute repeatedly
 done
+
 ```
+```bash 
+
+while [ $index -lt ${#fruits[@]} ]
+do 
+    echo "Fruits: ${fruits[$index]}"
+    ((index++))
+done
+```
+- The expression 
+```bash
+    ${#fruits[@]}
+```
+is used to get the length of the array variable
+- ```@``  refers to all contents in the array
+- When ```#``` is used as in ```${array[@]}```, it helps determine the total number of elements in the array
+- 
+
+
+
+
+## for Loops
+
+```bash
+for variable in sequence
+do 
+    #command to be execued
+done
