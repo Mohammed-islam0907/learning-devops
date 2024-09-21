@@ -126,6 +126,8 @@ is used to get the length of the array variable
 
 ## for Loops
 
+-Can be used with arrays, list of values or ranges to automate repetitive tasks
+
 ```bash
 for variable in sequence
 do 
