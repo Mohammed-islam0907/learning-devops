@@ -279,3 +279,23 @@ get_file_count "./"
 
 - ```set -o pipefail``` causes pipeline to not be executed when command before pipeline is not successfully executed
 
+## Environment Variables
+
+- can assign envirnment variables to local variables, making it easier to read and work with
+
+```bash 
+
+user=$USER
+home=$HOME 
+os_type=$OSTYPE 
+
+echo "$user"
+
+echo "$home"
+
+echo "$os_type"
+
+```
+
+## Standard Environment Variables
+
