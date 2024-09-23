@@ -297,6 +297,3 @@ echo "$os_type"
 
 ```
 
-## Standard Environment Variables
-
--  
