@@ -1,0 +1,20 @@
+current_date File deleted: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena/test.log 
+2024-09-27 16:22:54 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:22:58 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:05 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:12 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:18 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:24 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:27 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:34 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:38 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:44 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:48 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:51 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:23:58 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:25:21 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena/test.txt
+2024-09-27 16:25:21 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena/test.txt
+2024-09-27 16:25:24 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena/test.txt
+2024-09-27 16:25:37 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:25:39 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
+2024-09-27 16:25:44 File modified/created: /Users/ikramislam/Desktop/learning-devops/BASH_scripting/Projects/Arena
