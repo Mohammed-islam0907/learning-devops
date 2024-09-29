@@ -29,26 +29,6 @@ This repository is structured to include my solutions to each level. Each level 
 
 ### Project Structure
 
-```bash
-projects/
-│
-├── level_1/
-│   ├── mission.md        # Mission description for Level 1
-│   ├── solution.sh       # My solution for Level 1
-│
-├── level_2/
-│   ├── mission.md        # Mission description for Level 2
-│   ├── solution.sh       # My solution for Level 2
-│
-├── level_3/
-│   ├── mission.md        # Mission description for Level 3
-│   ├── solution.sh       # My solution for Level 3
-│
-├── boss_battle_1/
-│   ├── mission.md        # Boss Battle 1 description
-│   ├── solution.sh       # My solution for Boss Battle 1
-│
-└── README.md             # Overview of the project
 
 ```plaintext
 ├── Projects/
