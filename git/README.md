@@ -18,4 +18,15 @@
 - Provides detailed overview of project
 - Explains what project is about 
 - First document user sees
+
+## Editing changes into Git
+
+### Rebasing & Force changing:
+
+- Maintains linear project history 
+- 
+- ```git push --force-with-lease``` This is good practice as it adds a safety layer
+- Checks if remote branch has been updated after last fetch.
+
+### Squashing Commits
 - 
