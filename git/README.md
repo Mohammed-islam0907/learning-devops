@@ -33,7 +33,11 @@
 - Simpler and cleaner history
 - Easier to review changes 
 
-### .gitignore Files
+## .gitignore Files
+- Makes sure Git ignores files that users don't want on their repository
+- Protect sensitive data
+- Keeps repository clean
+- 
 
 # Good Practices
 - ``` git pull``` before making changes
