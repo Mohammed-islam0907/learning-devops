@@ -1,18 +1,18 @@
 <h1 align="center">Hi 👋, I'm Mohammed Islam</h1>
 <h3 align="center">An aspiring DevOps Engineer from London</h3>
-<h4 align="center">Here you can find what I am doing to become a DevOps Engineer. I will make this more presentable later on</h4>
+<h4 align="center">Here you can find what I am doing to beco a DevOps Engineer. I will make this more presentable later on</h4>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mohammed-islam0907&label=Profile%20views&color=0e75b6&style=flat" alt="mohammed-islam0907" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mohammed-islam0907" alt="mohammed-islam0907" /></a> </p>
 
-- 🌱 I’m currently learning/will be learning **everything DevOps related**
+- 🌱 I plan on learning **everything DevOps related**
 
 - 👨‍💻 All of my projects are available at [https://github.com/Mohammed-islam0907/learning-devops.git](https://github.com/Mohammed-islam0907/learning-devops.git)
 
 - 📝 I am documenting my DevOps journey on LinkedIn [https://www.linkedin.com/in/mohammed-islam-735a85262/](https://www.linkedin.com/in/mohammed-islam-735a85262/)
 
-- 💬 Ask me about **Linux/Bash fundamentals**
+- 📝 Studying for **AWS Certified Cloud Practitioner Certification**
 
 - 📫 How to reach me **https://www.linkedin.com/in/mohammed-islam-735a85262/**
 
