@@ -8,15 +8,13 @@
 
 - 🌱 I plan on learning **everything DevOps related**
 
-- 👨‍💻 All of my projects are available at [https://github.com/Mohammed-islam0907/learning-devops.git](https://github.com/Mohammed-islam0907/learning-devops.git)
-
 - 📝 I am documenting my DevOps journey on LinkedIn [https://www.linkedin.com/in/mohammed-islam-735a85262/](https://www.linkedin.com/in/mohammed-islam-735a85262/)
 
 - 📝 Studying for **AWS Certified Cloud Practitioner Certification**
 
 - 📫 How to reach me **https://www.linkedin.com/in/mohammed-islam-735a85262/**
 
-- ⚡ Fun fact **I came from a construction background and started working in Tech in August 2024 and run a family perfume business**
+- ⚡ Fun fact **I came from a construction background and started landed my first Tech role in August 2024**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
