@@ -29,7 +29,10 @@
 - Checks if remote branch has been updated after last fetch.
 
 ### Squashing Commits
-- 
+- Combines multiple commits into single commit
+- Simpler and cleaner history
+- Easier to review changes 
 
 # Good Practices
 - ``` git pull``` before making changes
+- Commit frequently so you can understand where problems arise
