@@ -33,6 +33,9 @@
 - Simpler and cleaner history
 - Easier to review changes 
 
+### .gitignore Files
+
 # Good Practices
 - ``` git pull``` before making changes
 - Commit frequently so you can understand where problems arise
+
