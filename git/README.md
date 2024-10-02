@@ -30,3 +30,6 @@
 
 ### Squashing Commits
 - 
+
+# Good Practices
+- ``` git pull``` before making changes
