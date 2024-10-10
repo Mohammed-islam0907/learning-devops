@@ -35,3 +35,4 @@ This project demonstrates the setup of an NGINX web server on an Amazon EC2 inst
 - Entered [http://nginx.mohammed-devops.uk/](http://nginx.mohammed-devops.uk/) into browser ad it worked!! 
 - Might not work when viewing because I terminated my EC2 instance to avoid unwanted costs
 
+![nginx](../Images/nginx.png)
