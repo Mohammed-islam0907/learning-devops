@@ -5,7 +5,7 @@ This project demonstrates the setup of an NGINX web server on an Amazon EC2 inst
 
 ## Tools and Technologies Used
 - **Amazon Web Services (AWS)**
-  - EC2 Instance
+- EC2 Instance
 - **Ubuntu** OS
 - **NGINX** Web Server
 - **Cloudflare** for DNS Management
