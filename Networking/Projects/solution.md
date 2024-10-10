@@ -29,10 +29,10 @@ This project demonstrates the setup of an NGINX web server on an Amazon EC2 inst
 ### 4. Configure DNS in Cloudflare
 - Added an A record
 - Name nginx
-- Entered IPv4 of EC2 instance
+- Entered public IPv4 of EC2 instance
 
 ### 5. Verify Setup
-- Entered [http://nginx.mohammed-devops.uk/](http://nginx.mohammed-devops.uk/) into browser ad it worked!! 
+- Entered [http://nginx.mohammed-devops.uk/](http://nginx.mohammed-devops.uk/) into browser and it worked!! 
 - Might not work when you are viewing because I terminated my EC2 instance to avoid unwanted costs
 
 ![nginx](../Images/nginx.png)
