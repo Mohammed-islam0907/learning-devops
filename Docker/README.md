@@ -17,3 +17,26 @@
 - Isolation of containers means the applications don't interfere with eachother
 - Provide consistent environment for applications to run - behave same wherever they run - e.g. Mac or Windows
 - Containers share host operating system - therefore quick start up 
+
+## What is Docker?
+
+- Open platform for developing, shipping and running applications in containers
+- Simplifies process of managing contaibers making it easer to build, deploy and manage applications
+
+**Components of Docker**
+
+1. Docker Engine- runs and manages containers based on instuction from docker files and images
+2. Docker Hub - Repository where you can find and share Docker images
+
+## Images & Containers
+
+- Images - templates for creating containers 
+    - They are immutable - dont change once created 
+        - runs consistently no matter where it is deployed
+- Containers - running instances of these images
+    - What you intereact with 
+    - Image = recipe, Container = product
+    - Container run application 
+
+- Docker file is used to build Docker images 
+
