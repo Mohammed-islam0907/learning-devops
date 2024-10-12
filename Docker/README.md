@@ -60,9 +60,17 @@
 
 - VM's allows multiple operating systems to run on a single physical machine
 - Base - infastructure and above we have host OS and abov we have the hypervisor - creates and manages virual machines by allocating resources e,g, CPU, memory, storage
-- Each VM runs full guest OS, which is isolated from others e.g. I am using mac OS, but I can run Ubuntu (guest OS)
+- Each VM runs full guest OS, which is isolated from others e.g. I am using mac OS, but I can run Ubuntu - good if you need to run different operating systems(strong isolation)
 - Each VM is resource heavy
 
 <br>
 
-- Containters
+- Containters - lightweight and efficient way to isolate applications
+- Share host OS
+- Instead of running hypervisor, they use Docker engine
+- Share host OS
+- Containers are isolated from eachother, but share same host OS (Process level isolation)
+- startup faster
+
+
+![VM vs containers](/Docker/Images/VM%20vs%20Containers.png)
