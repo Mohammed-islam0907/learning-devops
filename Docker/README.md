@@ -40,3 +40,29 @@
 
 - Docker file is used to build Docker images 
 
+## Importance of Docker today
+
+- Docker simplified deployment
+    - If application works in a Docker container on local macine, it works the same in production
+
+- Improved efficiency
+    - Virtual machines take long to load, Docker is lightweight because it shares the systems OS
+
+- Enhanced collaboration
+    - Can create Docker image and share it with the team
+    - Onboarding new developers is easy
+
+<br>
+
+- **Integrates smoothly with CI/CD pipelines - allows for automated testing/building of containers**
+
+## FAMOUS Interview Question: VMs vs. Containers
+
+- VM's allows multiple operating systems to run on a single physical machine
+- Base - infastructure and above we have host OS and abov we have the hypervisor - creates and manages virual machines by allocating resources e,g, CPU, memory, storage
+- Each VM runs full guest OS, which is isolated from others e.g. I am using mac OS, but I can run Ubuntu (guest OS)
+- Each VM is resource heavy
+
+<br>
+
+- Containters
