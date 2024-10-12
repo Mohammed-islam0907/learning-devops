@@ -31,11 +31,11 @@
 ## Images & Containers
 
 - Images - templates for creating containers 
-    - They are immutable - dont change once created 
+    - They are immutable - don't change once created 
         - runs consistently no matter where it is deployed
 - Containers - running instances of these images
     - What you intereact with 
-    - Image = recipe, Container = product
+    - Image = recipe, Container = product created
     - Container run application 
 
 - Docker file is used to build Docker images 
