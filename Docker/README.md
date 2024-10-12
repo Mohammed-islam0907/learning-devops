@@ -76,3 +76,12 @@
 
 
 ![VM vs containers](/Docker/Images/VM%20vs%20Containers.png)
+
+## Dockerfile
+
+- ```FROM``` specifies base image for docker image
+- ```RUN``` executes commands in the container
+- ```COPY``` copies files from host machine int container 
+- ```WORKDIR``` sets working directory 
+- ```CMD``` specifies command to run when container starts 
+
