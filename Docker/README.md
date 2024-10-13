@@ -77,6 +77,8 @@
 
 ![VM vs containers](/Docker/Images/VM%20vs%20Containers.png)
 
+![VM's vs containers key diff](/Docker/Images/Key%20differences%20between%20VM%20and%20container.png)
+
 ## Dockerfile
 
 - ```FROM``` specifies base image for docker image
