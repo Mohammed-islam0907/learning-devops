@@ -6,7 +6,7 @@
 
 ### Level 0 (15/09/2024)
 
-![LEVEL0](../../images/Bandit_game/Screenshot%202024-09-15%20at%2008.56.44.png)
+![level0](/linux/projects/Bandit_game/images/Screenshot%202024-09-15%20at%2008.56.44.png)
 
 - ssh: This command initiates a secure shell connection, which allows me to securely access and manage a remote machine over an insecure network.
 
@@ -19,15 +19,15 @@
 <br>
 
 ### Level 0 → Level 1 (15/09/2024)
-![Level 0 → Level 1](../../images/Bandit_game/Screenshot%202024-09-15%20at%2008.59.31.png)
 
+![level0 -> level 1](/linux/projects/Bandit_game/images/Screenshot%202024-09-15%20at%2008.59.31.png)
 ### Mistake I made: 
 After logging in, I began by exploring the current directory with the ```ls``` command, which revealed a single file named "readme." Mistakenly, I first tried to access "readme" as if it were a directory using ```cd readme```, but quickly learned it was a file due to the error message returned.
 
 ### Here is a breakdown of what I did:
 <br>
 
-- ```ls``` : Lists all files and directories in the current directory. It's a fundamental command for navigating and understanding the structure of directories.
+- ```ls``` : Lists all files and directories in the current directory. It's a fundamental command for navigating an understanding the structure of directories.
 
 - ```cd readme```: Attempted to change to a directory named "readme," but failed because "readme" is a file. This error taught me to pay attention to the nature of directory listings.
 
@@ -39,7 +39,7 @@ After logging in, I began by exploring the current directory with the ```ls``` c
 
 ### Level 1 → Level 2 (15/09/2024)
 
-![Level1-2](../../images/Bandit_game/level%201-2.png)
+![Level1-2](/linux/projects/Bandit_game/images/level%201-2.png)
 
 ### Mistake I made: 
  I mistakenly used ```cat -``` thinking it might help display file contents, but it was the wrong approach as it read from standard input instead. I then correctly used ```cat ./-``` to specify reading directly from a file named ```-```
@@ -50,7 +50,7 @@ Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
 ### Level 2 → Level 3 (15/09/2024)
 
-![level 2-3](../../images/Bandit_game/level2-3.png)
+![level 2-3](/linux/projects/Bandit_game/images/level2-3.png)
 
 - ```cat "spaces in this filename"```. Enclosing the filename in quotes is essential because it ensures the command treats the spaces as part of the filename
 
@@ -67,7 +67,7 @@ Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 ### Level 4 → Level 5 (15/09/2024)
 
-![Level4-5](../../images/Bandit_game/Level4-5.png)
+![Level4-5](/linux/projects/Bandit_game/images/Level4-5.png)
 
 - ```cd``` inhere to navigate into the directory "inhere".
 - ```ls``` to list the files in the directory, which revealed multiple files.
@@ -80,7 +80,7 @@ Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 ### Level 5 → Level 6 (15/09/2024)
 
-![5-6](../../images/Bandit_game/level5-6.png)
+![5-6](/linux/projects/Bandit_game/images/level5-6.png)
 
 - ```cd``` inhere to enter the specified directory.
 ls to list all subdirectories under "inhere", which revealed multiple directories named "maybehereXX".
@@ -97,7 +97,7 @@ ls to list all subdirectories under "inhere", which revealed multiple directorie
 
 ### Level 6 → Level 7 (15/09/2024)
 
-![level6-7](../../images/Bandit_game/level6-7.png)
+![level6-7](/linux/projects/Bandit_game/images/level6-7.png)
 
 ### Level Goal
 The password for the next level is stored somewhere on the server and has all of the following properties:
@@ -118,7 +118,7 @@ To achieve the goal, I followed these steps:
 
 ## Bandit Level 7 → Level 8
 
-![level7-8](../../images/Bandit_game/level7-8.png)
+![level7-8](/linux/projects/Bandit_game/images/level7-8.png)
 
 ### Level Goal
 The password for the next level is stored in the file `data.txt` next to the word "millionth".
@@ -135,7 +135,7 @@ To retrieve the password, I followed these steps:
 
 ## Bandit Level 8 → Level 9
 
-![level8-9](../../images/Bandit_game/level8-9.png)
+![level8-9](/linux/projects/Bandit_game/images/level8-9.png)
 
 ### Level Goal
 The password for the next level is stored in the file `data.txt` and is the only line of text that occurs only once.
@@ -164,7 +164,7 @@ This method efficiently isolated the unique line in `data.txt`, using a streamli
 
 ## Bandit Level 9 → Level 10
 
-![level9-10](../../images/Bandit_game/level9-10.png)
+![level9-10](/linux/projects/Bandit_game/images/level9-10.png)
 
 ### Level Goal
 The password for the next level is stored in the file `data.txt` and appears within one of the few human-readable strings, preceded by several '=' characters.
@@ -184,7 +184,7 @@ The password for the next level is stored in the file `data.txt` and appears wit
 
 ## Bandit Level 10 → Level 11
 
-![level10-11](../../images/Bandit_game/l10-11.png)
+![level10-11](/linux/projects/Bandit_game/images/l10-11.png)
 
 ### Level Goal
 The password for the next level is stored in the file `data.txt`, which contains base64 encoded data.
@@ -206,7 +206,7 @@ The password for the next level is stored in the file `data.txt`, which contains
 
 ## Bandit Level 11 → Level 12
 
-![level11-12](../../images/Bandit_game/l11-12.png)
+![level11-12](/linux/projects/Bandit_game/images/l11-12.png)
 
 ### Level Goal
 The password for the next level is stored in the file `data.txt`, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions, known as a ROT13 encryption.
@@ -341,7 +341,7 @@ The password for the next level is stored in `/etc/bandit_pass/bandit14` and can
 
 ## Bandit Level 14 → Level 15
 
-![level14-15](../../images/Bandit_game/level14-15.png)
+![level14-15](/linux/projects/Bandit_game/images/level14-15.png)
 
 ### Level Goal
 The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
@@ -364,8 +364,8 @@ The password for the next level can be retrieved by submitting the password of t
 
 ## Bandit Level 15 → Level 16
 
-![level 15-16](../../images/Bandit_game/Level15/Screenshot%202024-09-18%20at%2020.43.40.png)
-![l15-16](../../images/Bandit_game/Level15/Screenshot%202024-09-18%20at%2020.43.51.png)
+![level 15-16](/linux/projects/Bandit_game/images/Level15/Screenshot%202024-09-18%20at%2020.43.40.png)
+![l15-16](/linux/projects/Bandit_game/images/Level15/Screenshot%202024-09-18%20at%2020.43.51.png)
 
 ### Level Goal
 The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
