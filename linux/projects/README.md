@@ -392,15 +392,15 @@ The password for the next level can be retrieved by submitting the password of t
 
 ## Bandit Level 16 → Level 17
 
-![level 16-17](../../images/Bandit_game/Level%2016-17/Screenshot%202024-09-18%20at%2020.58.40.png)
+![level 16-17](/linux/projects/Bandit_game/images/Level%2016-17/Screenshot%202024-09-18%20at%2020.58.40.png)
 
-![level 16-17](../../images/Bandit_game/Level%2016-17/Screenshot%202024-09-18%20at%2021.21.59.png)
+![level 16-17](/linux/projects/Bandit_game/images/Level%2016-17/Screenshot%202024-09-18%20at%2021.21.59.png)
 
-![level 16-17](../../images/Bandit_game/Level%2016-17/Screenshot%202024-09-18%20at%2021.22.22.png)
+![level 16-17](/linux/projects/Bandit_game/images/Level%2016-17/Screenshot%202024-09-18%20at%2021.22.22.png)
 
-![level 16-17](../../images/Bandit_game/Level%2016-17/Screenshot%202024-09-18%20at%2021.23.07.png)
+![level 16-17](/linux/projects/Bandit_game/images/Level%2016-17/Screenshot%202024-09-18%20at%2021.23.07.png)
 
-![level 16-17](../../images/Bandit_game/Level%2016-17/Bandit_gaScreenshot%202024-09-18%20at%2021.23.36.png)
+![level 16-17](/linux/projects/Bandit_game/images/Level%2016-17/Screenshot%202024-09-18%20at%2021.23.36.png)
 
 
 ### Level Goal
@@ -445,7 +445,7 @@ The credentials for the next level can be retrieved by submitting the password o
 
 ## Bandit Level 17 → Level 18
 
-![level 17-18](../../images/Bandit_game/Bandit_game/level%2017-18.png)
+![level 17-18](/linux/projects/Bandit_game/images/level%2017-18.png)
 
 
 ### Level Goal
