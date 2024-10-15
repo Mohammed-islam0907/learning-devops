@@ -87,3 +87,16 @@
 - ```WORKDIR``` sets working directory 
 - ```CMD``` specifies command to run when container starts 
 
+## Docker Networking
+
+**Basic Networking Concepts in Docker** 
+
+ 1. Bridge Network: Default network for containers on same machine - communicate using their own IP adresses - isolated from host machines network provides extra security
+ 
+ 2. Host Network: Container uses hosts network directly - useful for containers that need to interact closely with the host system  
+
+ 3. None Network: Gives container no network interface - completely isolated - used when you want to make sure container has no network, for secuirity reasons
+
+ **Microservices allow different parts of an application to run as independant services - each in their own container**
+  - Docker networking ensures these services can communicate efficiently 
+  - Highly scalable, meaning you can scale as the application grows
