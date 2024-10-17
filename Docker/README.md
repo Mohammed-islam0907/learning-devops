@@ -230,3 +230,18 @@ docker run --network <network_name> <image_name>
     - Imagine new developer joins team
     - Instead of spending time setting up environment, they can clone the repository and they will have the same environment
 
+---
+
+## Docker Registries
+
+- **Docker Registry is a system for storing and sharing Docker images**
+- **Public Registry** - Place to share images to the world
+- **Private Registries** e.g. AWS ECR - secure, restricted images 
+
+## Importance of Docker Registries in DevOps
+
+1. Streamline Deoplment process - once stored in registry, they can be easily accessed and deployed
+2. Enhance collaboration - everyone has access to same resources 
+3. Ensures Consitency - same image used in devolping, testing and production 
+
+
