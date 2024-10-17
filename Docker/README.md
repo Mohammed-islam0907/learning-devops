@@ -99,3 +99,102 @@
  **Microservices allow different parts of an application to run as independant services - each in their own container**
   - Docker networking ensures these services can communicate efficiently 
   - Highly scalable, meaning you can scale as the application grows
+
+
+## Recap on what is Docker?
+
+Docker is a platform that allows developers to package applications into containers, which include all the necessary dependencies, making them portable and consistent across different environments.
+
+## Key Concepts
+
+- **Image**: A read-only template with the app and its environment.
+- **Container**: A running instance of an image.
+- **Dockerfile**: A script containing a series of instructions for building a Docker image.
+- **Docker Hub**: A cloud-based registry where you can find and share Docker images.
+
+---
+
+## Common Docker Commands
+
+### **Check Docker Version**
+To check if Docker is installed and its version:
+```bash
+docker --version
+```
+
+### **List Docker images**
+
+```bash
+docker images
+```
+
+### **Pull image form Docker Hub**
+
+```bash
+docker pull <image_name>
+```
+e.g. 
+
+```bash
+docker pull mysql:5.7
+```
+
+### **Run container**
+
+```bash 
+docker run <image_name>
+```
+
+e.g running Nginx server
+
+```bash
+docker run -d -p 80:80 nginx
+```
+
+### **List Running Containers**
+
+```bash
+docker ps
+```
+
+### **Stop Running Container**
+
+```bash
+docker stop <container_id>
+```
+
+### **Remove Container**
+
+```
+docker rm <container_id>
+```
+
+### **Build an image**
+
+```bash
+docker build -t <image_name>
+```
+
+e.g.
+
+```bash
+docekr build -t my-flask-app
+```
+
+### **Create Network**
+
+```bash
+docker network create <network_name>
+```
+
+### **Run Container With Custom Network
+
+```bash
+docker run --network <network_name> <image_name>
+```
+
+## Tips
+
+- -d flag runs container in detachd mode (background)
+- -p flag maps ports between the container and host machine e.g. (5002:5002)
+- Name containers using --name option making it easier to manage
