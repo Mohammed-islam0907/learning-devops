@@ -213,3 +213,20 @@ docker run --network <network_name> <image_name>
 
 3. **Networking**
     - automatically creates network for you ensuring services can communicate
+
+
+## Why Docker Compose is important
+
+### 1. **Makes development and testing easier**
+
+    - can quickly spin up exact environment needed with nessessary services e.g. webserver, database etc.. 
+    - instead of manually setting each service, you compose everything into one Docker Compose yaml and run one command to start entire environment
+
+### 2. **Ensures Consistency**
+
+    - Ensures everyone in team is working in same environmet, reducing bugs and errors
+
+### 3. **Enhances Teamwork**
+    - Imagine new developer joins team
+    - Instead of spending time setting up environment, they can clone the repository and they will have the same environment
+
