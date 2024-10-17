@@ -6,7 +6,7 @@ services:
     ports:
       - "5002:5002"
     depends_on:
-      - db
+      - mydb
 
   mydb:
     image: mysql:8
