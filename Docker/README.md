@@ -198,3 +198,18 @@ docker run --network <network_name> <image_name>
 - -d flag runs container in detachd mode (background)
 - -p flag maps ports between the container and host machine e.g. (5002:5002)
 - Name containers using --name option making it easier to manage
+
+
+## Docker Compose
+
+- **Docker Compose helps run multiple Docker file containers together**
+
+### **Key features**
+
+1.  **Docker compose .yml file**
+    - .yml file lists all services application needs e.g. which image to use/ which port to expose etc...
+
+2. **Commands**
+
+3. **Networking**
+    - automatically creates network for you ensuring services can communicate
