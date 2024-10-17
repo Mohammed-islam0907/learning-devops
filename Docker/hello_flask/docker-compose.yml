@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5002:5002"
+    depends_on:
+      - db
+
+  mydb:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
