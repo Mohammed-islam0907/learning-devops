@@ -1,6 +1,6 @@
 # app.py
 
-from flask import Flask 
+from flask import Flask, render_template
 import redis
 
 app = Flask(__name__)
@@ -15,12 +15,12 @@ r = redis.Redis(
 
 @app.route('/')
 def greetings():
-    return 'Welcome to my Redis Flask App!!'
+    return render_template('layout.html')
 
 @app.route('/count')
 def count():
     count = r.incr('visitors')
-    return f'This page has been visited {count} times.'
+    return render_template('layout.html', content=f'This page has been visited {count} times.')
 
 
 if __name__ == '__main__':
