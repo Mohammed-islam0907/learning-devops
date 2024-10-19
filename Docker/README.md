@@ -281,4 +281,6 @@ docker system prune
 | Easy to start a Cluster| Difficult to start cluster    | 
 | Limited to Docker API's capabilities| Not limited to the Docker API's capabilities| 
 | |    | 
-|           | Data 3   | 
+
+ - Docker swarm is easier to use, and integrates seamlessly with Docker - good for smaller deployments
+ - Kubernetes provides more powerf, flexibilty and scalability making it better for more complex deployments
