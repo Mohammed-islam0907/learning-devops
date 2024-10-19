@@ -193,6 +193,12 @@ docker network create <network_name>
 docker run --network <network_name> <image_name>
 ```
 
+### **Remove all  unused containers**
+
+```bash
+docker system prune
+```
+
 ## Tips
 
 - -d flag runs container in detachd mode (background)
