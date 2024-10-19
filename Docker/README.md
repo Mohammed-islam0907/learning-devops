@@ -204,6 +204,7 @@ docker system prune
 - -d flag runs container in detachd mode (background)
 - -p flag maps ports between the container and host machine e.g. (5002:5002)
 - Name containers using --name option making it easier to manage
+- -t allows you to specify a name (and optionally a tag)
 
 
 ## Docker Compose
@@ -251,3 +252,14 @@ docker system prune
 3. Ensures Consitency - same image used in devolping, testing and production 
 
 
+## Making Our Image Lighter: Multistage Builds
+
+- Docker image I created is quite large - over 300mb
+- Large images slow down deployment
+    - consumes more badwith and requires more storage
+
+- Multistage builds: allows you to use multiple FROM statements in Docker file
+    -  One stage to build application and another, lighter stage to create final image that will be deployed
+    - So there's a part that needs all the dependencies to build the application, but not all rhe dependencies are required in the final image
+    - allows you to remove unessessary files
+    - 
