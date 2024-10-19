@@ -9,4 +9,6 @@ services:
     - redis
 
   redis:
-    image: 
+    image: redis:latest 
+    expose:
+    - "6379"
