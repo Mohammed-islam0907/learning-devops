@@ -5,13 +5,17 @@ import redis
 
 app = Flask(__name__)
 
-# Connect to Redis server
-r = redis.Redis(host='localhost', port=6379, decode_responses=True) #Copy and paste from Redis.io
-
 # Greeting message
 @app.route('/')
 def greetings():
-    return 'Welcome to my Flask App!!'
+    # Connect to Redis server
+r = redis.Redis(
+    host='localhost', 
+    port=6379, 
+    decode_responses=True
+    db="0"
+) #Copy and paste from Redis.io
+    return 'Welcome to my Redis Flask App!!'
 
 @app.route('count')
 def counter():
@@ -21,4 +25,3 @@ def counter():
 
 if __name__ == '__main__'
     app.run(host='0.0.0.0', port=5001)
-    
