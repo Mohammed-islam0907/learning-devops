@@ -271,7 +271,7 @@ docker system prune
 - Allows you to focus more on application 
 - Essential for DevOps engineers, enabling you to deploy, manage and scale applications with confidence
 
-## Docker Swarm vs Kubernetes
+## Docker Swarm vs Kubernetes (Orchestration Tools)
 
  
 | Docker Swarm| Kubernetes | 
@@ -284,3 +284,20 @@ docker system prune
 
  - Docker swarm is easier to use, and integrates seamlessly with Docker - good for smaller deployments
  - Kubernetes provides more powerf, flexibilty and scalability making it better for more complex deployments
+
+
+## Why use Orchestration Tools?
+
+- As application grows in complexity and scale, managing containers manually becomes more difficult
+- Orchestration tools are used to handle many containers across multiple machines
+- Ensure high availablitiy - automatically monitor state of containers and can restart/relocate containers allowing them to recover without manual intervention
+- Automatically scale application - Up during high demand/ save resources during less demand 
+- Self healing - detect and restart failed containers, ensuring  continuous service 
+
+So they are used to:
+
+- Simplify complex deployments
+- Enhance reliability of application
+- Improve resource utilisation
+
+
