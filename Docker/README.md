@@ -271,4 +271,14 @@ docker system prune
 - Allows you to focus more on application 
 - Essential for DevOps engineers, enabling you to deploy, manage and scale applications with confidence
 
+## Docker Swarm vs Kubernetes
 
+ 
+| Docker Swarm| Kubernetes | 
+|-----------|----------|
+| No autoscaling| Autoscaling     | -    | 
+|Good community | Great active community| 
+| Easy to start a Cluster| Difficult to start cluster    | 
+| Limited to Docker API's capabilities| Not limited to the Docker API's capabilities| 
+| |    | 
+|           | Data 3   | 
