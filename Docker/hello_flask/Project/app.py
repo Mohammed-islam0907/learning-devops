@@ -9,12 +9,12 @@ app = Flask(__name__)
 @app.route('/')
 def greetings():
     # Connect to Redis server
-r = redis.Redis(
-    host='localhost', 
-    port=6379, 
-    decode_responses=True
-    db="0"
-) #Copy and paste from Redis.io
+    r = redis.Redis(
+        host='localhost', 
+        port=6379, 
+        decode_responses=True
+        db="0"
+    ) #Copy and paste from Redis.io
     return 'Welcome to my Redis Flask App!!'
 
 @app.route('count')
