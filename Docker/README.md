@@ -262,4 +262,13 @@ docker system prune
     -  One stage to build application and another, lighter stage to create final image that will be deployed
     - So there's a part that needs all the dependencies to build the application, but not all rhe dependencies are required in the final image
     - allows you to remove unessessary files
-    - 
+
+## Kubernetes (K8) 
+
+- Kubernetes: Open source platform used for automating deployment/scaling application
+- Powerful manager that oversees all containers
+- Makes sure containers are deployed correctly, can scale up/don to meet demand, recover from failiure
+- Allows you to focus more on application 
+- Essential for DevOps engineers, enabling you to deploy, manage and scale applications with confidence
+
+
