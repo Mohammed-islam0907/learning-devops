@@ -28,7 +28,7 @@ This project demonstrates the setup of an NGINX web server on an Amazon EC2 inst
 
 ### 4. Configure DNS in Cloudflare
 - Added an A record
-- Name nginx
+- Named nginx
 - Entered public IPv4 of EC2 instance
 
 ### 5. Verify Setup
