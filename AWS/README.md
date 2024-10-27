@@ -30,3 +30,9 @@
 - Require specific characters
 - Allow all IAM users to change their paaswords
 - Prevent reusign passwords
+
+## MFA
+
+- Most effective way to secure account
+- Even if someone manages to get your password, they will need another security method e.g. Google authenticator, Hardware Key Fob, etc.
+
