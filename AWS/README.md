@@ -18,4 +18,7 @@
 
 - Inline policies are specific to users and not the group
 - If a user is part of a group and needs more access that other members of the group, you can set inline policies
-- 
+
+## IAM Policies Structure
+
+![IAM Policies](../AWS/images/IAM%20Policies%20structure.png)
