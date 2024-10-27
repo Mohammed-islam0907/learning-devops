@@ -22,3 +22,11 @@
 ## IAM Policies Structure
 
 ![IAM Policies](../AWS/images/IAM%20Policies%20structure.png)
+
+## IAM - Password Policy
+
+- In AWS, you can setup password policy:
+- Set minimum password length
+- Require specific characters
+- Allow all IAM users to change their paaswords
+- Prevent reusign passwords
