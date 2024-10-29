@@ -36,3 +36,25 @@
 - Most effective way to secure account
 - Even if someone manages to get your password, they will need another security method e.g. Google authenticator, Hardware Key Fob, etc.
 
+## AWS CLI - Command Line Interface
+
+- Allows you to interact with AWS services from the terminal 
+- Can do what you do in the console
+- Allows you to manage scripts - automating tasks
+
+## SDK - Software Development Kit
+
+- Makes it easy to connect code to AWS services
+
+
+## IAM Security Tools
+
+**IAM Credentials Report**
+- Report that lists all account's users and status of their various credentials 
+- IAM Access Advisor (user-level)
+
+**IAM Access Advisor (user level)**
+- Shows service permissions granted to a users and when those were last accessed 
+- Can be used to tune user permissions 
+
+
