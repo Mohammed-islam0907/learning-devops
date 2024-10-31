@@ -57,6 +57,12 @@
 - Shows service permissions granted to a users and when those were last accessed 
 - Can be used to tune user permissions 
 
-## Amazon Compute
+## Amazon EC2
 
+- **EC2 - Elastic Compute Cloud - Infastructure as a Service**
+
+- Renting virtual machines
+- Store data on virtual drives (EBS)
+- Distribute load across machines (ELB)
+- Scaling services using auto scaling group (ASG) 
 - 
