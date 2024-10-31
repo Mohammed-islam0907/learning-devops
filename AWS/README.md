@@ -99,6 +99,6 @@ How much:
 
 **Things to know**
 - If application times out, usually means there's a security group issue
-- "connection refused" error means it's not a security group issue
+- **"connection refused"** error means it's not a security group issue
 - All inbound traffic is blocked by default
-- All outbund traffic i authorised by default
+- All outbund traffic is authorised by default
