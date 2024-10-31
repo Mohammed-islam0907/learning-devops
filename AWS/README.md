@@ -90,3 +90,15 @@ How much:
     - Download common files form internet
     - Anyting really- Runs with Data Script runs with root user
 - EC2 User Data Script runs with root user - full control 
+
+## Security Groups
+
+- Control how traffic enters and exits our instances
+- Only has allow rules 
+- Acts as firewall on EC2 instances
+
+**Things to know**
+- If application times out, usually means there's a security group issue
+- "connection refused" error means it's not a security group issue
+- All inbound traffic is blocked by default
+- All outbund traffic i authorised by default
