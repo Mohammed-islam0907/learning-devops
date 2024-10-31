@@ -65,4 +65,16 @@
 - Store data on virtual drives (EBS)
 - Distribute load across machines (ELB)
 - Scaling services using auto scaling group (ASG) 
-- 
+
+
+## EC2 sizing & configuration options
+
+- OS: Linuxm Windows or Mac OS
+How much:
+    - CPU
+    - RAM
+    - Storage - Network attached (EBS & EFS), Hardware (EC2 Instance Store) - fast but temporary - if instance is stopped, the data is lost
+- Network card: speed of network card, 
+- Public IP address - making instance accessible from internet
+- Firewall rules: security groups - control what traffic can get through and who can access your instance
+- Bootstart script (configure at forst launch): EC2 
