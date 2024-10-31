@@ -78,3 +78,15 @@ How much:
 - Public IP address - making instance accessible from internet
 - Firewall rules: security groups - control what traffic can get through and who can access your instance
 - Bootstart script (configure at forst launch): EC2 
+
+
+## EC2 User Data
+
+- Can bootstrap instances using EC2 User Data script
+- Bootstrapping: launching commands when machine starts
+- Script run at start of instance only 
+- Can automate the following:
+    - Install updates/softwares
+    - Download common files form internet
+    - Anyting really- Runs with Data Script runs with root user
+- EC2 User Data Script runs with root user - full control 
