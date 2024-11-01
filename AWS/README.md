@@ -170,9 +170,19 @@ How much:
 
 2 types of scalability:
 - Vertical (1st step)  - increase size of the instance e.g. adding more RAM 
-- Horizontal - adding more instances. Also known as elastic scaling as when there's a spike in traffic, it scales up and then back down when needed
+- Horizontal - adding more instances. Also known as elastic scaling as when there's a spike in traffic, it scales up and then back down when needed e.g. Auto Scaling Group / Load balancer
 
 **High availability: goes hand in hand with horizontal scaling**
 - To be highly available, application/system needs to run in at least 2 data centres (AZ)
 - Goal is to survive data centre loss
 - If one AZ fails, traffic is automatically routed to another instance keeping application/server running
+- Use ASG multi-AZ & Load Balancer multi-AZ 
+
+## Load Balancer (LB)
+
+- Forwards/spreads traffic across multiple instances 
+- Sits between users and EC2 instances 
+- Checks which instances are healthy 
+- Ensures application is available even when instance fails
+- provides SSL termination (HTTPS) for your websites
+- High availability across zones 
