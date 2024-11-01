@@ -143,3 +143,10 @@ How much:
 - Sign of poor architectural decisions
 - Better to use random IP and register DNS name to it
 - Or use Load balancer
+
+## EBS Volume 
+
+- Elastic Block Store (EBS): Network drive you can attach to EC2 instance (not physical) 
+- Allows data to be stored even after termination
+- They are bound to specific availability zone
+- Free tier: 30 GB free EBS storage - SSD
