@@ -162,3 +162,4 @@ How much:
 
 - Managed network file system (NFS) that can be mounted on multiple EC2 instances 
 - Scalable - grows as you add data
+- Expensive
