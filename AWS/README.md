@@ -150,3 +150,15 @@ How much:
 - Allows data to be stored even after termination
 - They are bound to specific availability zone
 - Free tier: 30 GB free EBS storage - SSD
+
+## AMI (Amazon Machine Image)
+
+- Customisation of an EC2 instance (templates)
+- You add your own software, coniguration, OS, monitoring....
+- Faster boot time because all your software is pre-packaged
+- Can automate the setup of multiple EC2 instances with the same configuration, saving time
+
+## EFS (Elastic File System)
+
+- Managed network file system (NFS) that can be mounted on multiple EC2 instances 
+- Scalable - grows as you add data
