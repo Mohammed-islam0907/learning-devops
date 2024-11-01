@@ -102,3 +102,44 @@ How much:
 - **"connection refused"** error means it's not a security group issue
 - All inbound traffic is blocked by default
 - All outbund traffic is authorised by default
+
+## Classic Ports to Know
+
+- 22 - SSH (Secure Shell ) - log into Linux instance
+- 21 - FTP (File Transfer Protocol) - upload files ot file share (not very secure)
+- 22 - SFTP (Secure File Transfer Protocol) - upload files using SSH
+- 80 - HTTP - access unsecure websites
+- 443 - HTTPS - access secure websites
+- 53 - DNS - for DNS queries and resolving - translated domain names into IP addresses
+- 3389 - RDP (Remote Desktop Protocol) - log intoo a Windows instance
+
+## IPv4 vs IPv6
+
+- IPv4: 10.10.20.140 - Made of 4 different numbers seperated by .
+- IPv6: 3ffe:1900:4322:5:200:f8ff:fe21:75cf - Made due to rise of internet devices 
+
+- IPv4 allows for 3.7 billion addresses in the public space
+
+## Private vs Public IP's - NAT 
+
+- Network Address Translation (NAT) - converts private IP to public IP 
+- Allows company's to access internet 
+- Different networks can have the same private IP's but will have different public IP's
+
+- Public IP: no 2 devices can have the same IP addresses at th same time
+- Private: Device can only be identified on a private network. Devices on the same network can't have the same IP address
+
+## Elastic IP's 
+
+- When you tuen off and start instance, the public IP address changes
+- Elastic IP - public IPv4 you own as long as instance isn't deleted
+- Can attach it to one device at a time 
+
+
+**Why use?**
+- Can mask failiure of an isntance by quickly remapping the address to another instance in your account
+
+**Why to avoid?**
+- Sign of poor architectural decisions
+- Better to use random IP and register DNS name to it
+- Or use Load balancer
