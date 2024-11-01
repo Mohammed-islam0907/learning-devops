@@ -119,5 +119,12 @@ How much:
 - IPv6: 3ffe:1900:4322:5:200:f8ff:fe21:75cf - Made due to rise of internet devices 
 
 - IPv4 allows for 3.7 billion addresses in the public space
-- 
-- 
+
+## Private vs Public IP's - NAT 
+
+- Network Address Translation (NAT) - converts private IP to public IP 
+- Allows company's to access internet 
+- Different networks can have the same private IP's but will have different public IP's
+
+- Public IP: no 2 devices can have the same IP addresses at th same time
+- Private: Device can only be identified on a private network. Devices on the same network can't have the same IP address
