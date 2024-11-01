@@ -102,3 +102,22 @@ How much:
 - **"connection refused"** error means it's not a security group issue
 - All inbound traffic is blocked by default
 - All outbund traffic is authorised by default
+
+## Classic Ports to Know
+
+- 22 - SSH (Secure Shell ) - log into Linux instance
+- 21 - FTP (File Transfer Protocol) - upload files ot file share (not very secure)
+- 22 - SFTP (Secure File Transfer Protocol) - upload files using SSH
+- 80 - HTTP - access unsecure websites
+- 443 - HTTPS - access secure websites
+- 53 - DNS - for DNS queries and resolving - translated domain names into IP addresses
+- 3389 - RDP (Remote Desktop Protocol) - log intoo a Windows instance
+
+## IPv4 vs IPv6
+
+- IPv4: 10.10.20.140 - Made of 4 different numbers seperated by .
+- IPv6: 3ffe:1900:4322:5:200:f8ff:fe21:75cf - Made due to rise of internet devices 
+
+- IPv4 allows for 3.7 billion addresses in the public space
+- 
+- 
