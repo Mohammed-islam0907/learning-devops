@@ -163,3 +163,16 @@ How much:
 - Managed network file system (NFS) that can be mounted on multiple EC2 instances 
 - Scalable - grows as you add data
 - Expensive
+
+## Scalability & High Availability
+
+**Scalability means application/system can handle greater loads by adapting**
+
+2 types of scalability:
+- Vertical (1st step)  - increase size of the instance e.g. adding more RAM 
+- Horizontal - adding more instances. Also known as elastic scaling as when there's a spike in traffic, it scales up and then back down when needed
+
+**High availability: goes hand in hand with horizontal scaling**
+- To be highly available, application/system needs to run in at least 2 data centres (AZ)
+- Goal is to survive data centre loss
+- If one AZ fails, traffic is automatically routed to another instance keeping application/server running
