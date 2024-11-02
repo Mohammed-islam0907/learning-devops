@@ -192,8 +192,42 @@ How much:
 
 - Managed LB 
 - AWS guaranteed it will be working
-- AW takes care of upgrades, maintenance
+- AWS takes care of the hard work - upgrades, maintenance
 - High availability
 - More expensive than setting up LB e.g. using Nginx, but it less effort needed
 - Integrated with mny AWS services
 
+**Health checks**
+
+- Enables LB's to know if instances it sends traffic to are available
+
+## Types of LB's
+
+- Application Load Balancer (ALB) - operates at Layer 7
+    - HTTP, HTTPS, WebSocket
+
+- Network Load Balancer (NLB) - Layer 4 
+    -   TCP, UDP
+    - High performance senarious where low latency is needed e.g. gaming
+
+- Gateway Load Balancer (GWLB) - Layer 3 
+    -  Helps deploy/scale firewalls
+
+
+## ALB
+
+- Layer 7 (HTTP/HTTPS) - application layer
+- Can Load Balance traffic to multiple HTTP applications across machines (target groups)
+- Can load balance to multiple applicatios on the same machine - containers where you have many apps on an ECS/EC2
+- Support for HTTP/2 - more efficient version of HTTP
+- Routing tables to different target groups
+- ALB great for micro services and container based application e.g. Docker and Amazon ECS
+
+## ALB Target Groups
+
+- Target groups: Groups of resources like EC2 instances that your ALB routes traffic to 
+- EC2 instances (can be manages by an ASG - add/remove instances) - HTTP
+- ECS tasks (manage dby ECS itself) - HTTP
+- IP addresses must be privates IP's 
+- ALB can route to multiple target groups
+- Helath checks are at the target group level
