@@ -187,3 +187,13 @@ How much:
 - provides SSL termination (HTTPS) for your websites
 - High availability across zones 
 - Does more than spreading traffic, handles failover, improves security and ensures high availability
+
+## Elastic Load Balancer (ELB)
+
+- Managed LB 
+- AWS guaranteed it will be working
+- AW takes care of upgrades, maintenance
+- High availability
+- More expensive than setting up LB e.g. using Nginx, but it less effort needed
+- Integrated with mny AWS services
+
