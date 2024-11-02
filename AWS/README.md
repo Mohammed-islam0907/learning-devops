@@ -231,3 +231,40 @@ How much:
 - IP addresses must be privates IP's 
 - ALB can route to multiple target groups
 - Helath checks are at the target group level
+
+## Network Load Balancer (NLB)
+
+- Operates at layer 4 
+- Forards TCP & UDP traffic to instances
+- Handles millions of request per second
+- Less latency 
+- Not included in free tier 
+
+## Sticky Sessions 
+
+- LB spreads traffic across EC2 instances
+- Sticky sessions allows client to be routed to same instance behind a LB
+- Like sticking client to server 
+- Cookies are used by LB to keep track of which client is using which instances, avoiding losing information e.g. they have items in their cart 
+
+## SSL/TLS
+
+- SSL Certificate ensures traffic between your clients and LB's are encrypted during transit
+- SSL (Secure Sockets Layer) - used to encrypt
+- TLS (Transport Layer Security) - newer version of SSL 
+- SSL certificates authorised by Certificate authorities e.g. GoDaddy
+
+## LB - SSL Server Name Indication (SNI) 
+
+- SNI allows multiple SSL certificates to be on one web server to serve multiple websites, so there is no need for multiple IP addresses
+- Works for ALB, NLB & CloudFront
+
+## ELB - SSL certificates
+
+- ALB: attach multiple SSL certificates across multiple listerners
+- Uses SNI 
+
+## NLB: 
+
+- ALB: attach multiple SSL certificates across multiple listerners
+- Uses SNI 
