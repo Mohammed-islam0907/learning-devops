@@ -186,3 +186,4 @@ How much:
 - Ensures application is available even when instance fails
 - provides SSL termination (HTTPS) for your websites
 - High availability across zones 
+- Does more than spreading traffic, handles failover, improves security and ensures high availability
