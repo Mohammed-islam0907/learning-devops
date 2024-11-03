@@ -277,3 +277,16 @@ How much:
 - Ensures we have a min and max number of instances runnning
 - Re-create an EC2 instance if a previous one unhealthy or terminate
 - ASG is free - only pay for the instances ASG manages 
+
+## ASG with LB
+
+- Create highly scalable and dynamic system
+- ELB spreads load between EC2 instances and checks the health of the instances
+- If issue detected, it routes traffic to healthy instances
+- ASG scales out if load increases e.g. Black Friday sale
+
+## ASG Attributes
+
+- Launch templates ensures when ASG adds/remove EC2 instances, they are setup with the same configuration keeping things consistent and scalable as demands change
+
+## ASG, CLoudWatch alarms & Scaling
