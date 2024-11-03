@@ -320,3 +320,10 @@ How much:
 - Elastic Kubertnetes Service (EKS) - Amazons Kubernetes service
 - Fargate - Serverless cotainer platform works with ECS/EKS
 - Store container images
+
+## Amazon ECS - EC2 Launch type
+- ECS manages containers - scales up and down when needed
+- EC2 launch type: you are responsible for the infastructure 
+- Each EC2 instance Runs the ECS agent
+- Agent - registers the instance in the ECS cluster making it available to run the containers - Agent is like the middle man that keeps things connected between ECS service an EC2 instance
+- 
