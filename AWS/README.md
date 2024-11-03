@@ -268,3 +268,12 @@ How much:
 
 - ALB: attach multiple SSL certificates across multiple listerners
 - Uses SNI 
+
+## What is an Auto Scaling Group ASG?
+
+- ASG adjusts number of EC2 instances, depending on demnad
+- Scale out (add EC2 instances)
+- Scale in (remove EC2 instances)
+- Ensures we have a min and max number of instances runnning
+- Re-create an EC2 instance if a previous one unhealthy or terminate
+- ASG is free - only pay for the instances ASG manages 
