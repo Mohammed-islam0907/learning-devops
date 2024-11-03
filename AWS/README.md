@@ -313,3 +313,10 @@ How much:
 ## Containers on AWS
 
 - Container: Lightweight, portable box that holds application and everything it needs to run - ensures app behaves same way no matter what system it is running on
+
+## Container-related Services on AWS
+
+- Elastic Container Service (ECS) - Amazon's container platform
+- Elastic Kubertnetes Service (EKS) - Amazons Kubernetes service
+- Fargate - Serverless cotainer platform works with ECS/EKS
+- Store container images
