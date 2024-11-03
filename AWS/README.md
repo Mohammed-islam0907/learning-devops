@@ -306,3 +306,10 @@ How much:
 - e.g. I want average CPU usage to be around 40%
 2) Simple/Step scaling
 - When a CloudWatch alarm is triggered e.g. CPU > 70% then add 2 instances
+3) Scheduled Scaling
+- Anticipate, based on known patters e.g. I know that the load will increase between 7-9pm
+- e.g. Increase the min capacity to 10 at 7pm on Friday
+
+## Containers on AWS
+
+- Container: Lightweight, portable box that holds application and everything it needs to run - ensures app behaves same way no matter what system it is running on
