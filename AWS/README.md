@@ -290,3 +290,19 @@ How much:
 - Launch templates ensures when ASG adds/remove EC2 instances, they are setup with the same configuration keeping things consistent and scalable as demands change
 
 ## ASG, CLoudWatch alarms & Scaling
+
+- Can scale ASG based on CLoudWatch alarms
+- Alarm monitors metrics e.g. CPU usage
+- e.g. if CPU usage spikes, CloudWatch notices this, can create a scale-out policy (increase number of instances)
+
+
+## ASG - Scaling Policies
+
+- Adjust how ASG reacts to changes in demand
+
+**Dynamic Scaling**
+1) Target Tracking Scaling
+- Simple set up
+- e.g. I want average CPU usage to be around 40%
+2) Simple/Step scaling
+- When a CloudWatch alarm is triggered e.g. CPU > 70% then add 2 instances
