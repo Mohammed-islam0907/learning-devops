@@ -367,3 +367,10 @@ How much:
 - Integrated with ECS, backed by S3 - images stored securely
 - Access controlled by IAM
 - If there are errors, check IAM permissions
+
+## Elastic Kubernetes Service EKS 
+
+- Run Kunernetes on AWS - fully managed by AWS 
+- Automates deployment, scaling and management of containers
+- EKS solution if you want to leverage Kubernetes in AWS with all the management handled by AWS
+
