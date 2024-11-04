@@ -325,6 +325,7 @@ How much:
 - ECS manages containers - scales up and down when needed
 - EC2 launch type: you are responsible for the infastructure 
 - Each EC2 instance Runs the ECS agent to register in the ECS Cluster
+- ECS Cluster: a logical grouping of tasks/services.
 - Agent - registers the instance in the ECS cluster making it available to run the containers - Agent is like the middle man that keeps things connected between ECS service EC2 instances
 - ECS takes care of starting/stopping containers
 
@@ -334,6 +335,8 @@ How much:
 - Only define task requirements like CPU, memory, network settings
 - AWS handles adding containers etc.
 
-## IAM Roles
+## Amazon ECS - IAM Roles for ECS
 
+- EC2 instance profile is for the EC2 Launch Type only
+- Used by ECS agent
 - 
