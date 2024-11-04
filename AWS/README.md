@@ -268,3 +268,85 @@ How much:
 
 - ALB: attach multiple SSL certificates across multiple listerners
 - Uses SNI 
+
+## What is an Auto Scaling Group ASG?
+
+- ASG adjusts number of EC2 instances, depending on demnad
+- Scale out (add EC2 instances)
+- Scale in (remove EC2 instances)
+- Ensures we have a min and max number of instances runnning
+- Re-create an EC2 instance if a previous one unhealthy or terminate
+- ASG is free - only pay for the instances ASG manages 
+
+## ASG with LB
+
+- Create highly scalable and dynamic system
+- ELB spreads load between EC2 instances and checks the health of the instances
+- If issue detected, it routes traffic to healthy instances
+- ASG scales out if load increases e.g. Black Friday sale
+
+## ASG Attributes
+
+- Launch templates ensures when ASG adds/remove EC2 instances, they are setup with the same configuration keeping things consistent and scalable as demands change
+
+## ASG, CLoudWatch alarms & Scaling
+
+- Can scale ASG based on CLoudWatch alarms
+- Alarm monitors metrics e.g. CPU usage
+- e.g. if CPU usage spikes, CloudWatch notices this, can create a scale-out policy (increase number of instances)
+
+
+## ASG - Scaling Policies
+
+- Adjust how ASG reacts to changes in demand
+
+**Dynamic Scaling**
+1) Target Tracking Scaling
+- Simple set up
+- e.g. I want average CPU usage to be around 40%
+2) Simple/Step scaling
+- When a CloudWatch alarm is triggered e.g. CPU > 70% then add 2 instances
+3) Scheduled Scaling
+- Anticipate, based on known patters e.g. I know that the load will increase between 7-9pm
+- e.g. Increase the min capacity to 10 at 7pm on Friday
+
+## Containers on AWS
+
+- Container: Lightweight, portable box that holds application and everything it needs to run - ensures app behaves same way no matter what system it is running on
+
+## Container-related Services on AWS
+
+- Elastic Container Service (ECS) - Amazon's container platform
+- Elastic Kubertnetes Service (EKS) - Amazons Kubernetes service
+- Fargate - Serverless cotainer platform works with ECS/EKS
+- Store container images
+
+## Amazon ECS - EC2 Launch type
+- ECS manages containers - scales up and down when needed
+- EC2 launch type: you are responsible for the infastructure 
+- Each EC2 instance Runs the ECS agent to register in the ECS Cluster
+- ECS Cluster: a logical grouping of tasks/services, including EC2 instances, Fargate and on prem VM's.
+- Agent - registers the instance in the ECS cluster making it available to run the containers - Agent is like the middle man that keeps things connected between ECS and EC2 instances
+- ECS takes care of starting/stopping containers
+
+## Amazon ECS - Fargate Launch Type
+
+- AWS handles infastructure for you
+- Only define task requirements like CPU, memory, network settings
+- AWS handles adding containers etc.
+
+## Amazon ECS - IAM Roles for ECS
+
+- EC2 instance profile is for the EC2 Launch Type only
+- ECS agent running on each EC2 instance, needs permissions to interact with other AWS services, so uses EC2 instance profile to handle that
+
+**EC2 Instance Profile**
+- Makes API calls to ECS to update the cluster on whats happening withe the containers e.g. sending logs to Cloud Watch
+- Pull Docker images from ECR
+- Instance profile ensures ECS agent can do its job by giving it access
+
+**ECS Task Role**
+- Each container has its own ECS task role - defines permissions the task has while running
+- Allows each task to have a specific role - different containers need different permissions
+- Defined in Task Definition
+- Makes sure containers have access to what they need
