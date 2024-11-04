@@ -374,3 +374,15 @@ How much:
 - Automates deployment, scaling and management of containers
 - EKS solution if you want to leverage Kubernetes in AWS with all the management handled by AWS
 
+## EKS Node Types
+
+1) Managed Node Groups
+    - Creates and manages nodes (EC2 instances) for you
+    - Nodes are part of an ASG managed by EKS - meaning EKS adjusts number of nodes based on cluster work load
+
+2) Self managed nodes
+- You create node and register to the EKS cluster managed by an ASG
+- Use pre built AMI
+
+3) AWS Fargate
+- Just define memory and CPU required - AWS handles rest
