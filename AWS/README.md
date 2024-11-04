@@ -350,3 +350,20 @@ How much:
 - Allows each task to have a specific role - different containers need different permissions
 - Defined in Task Definition
 - Makes sure containers have access to what they need
+
+## Amazon ECS - Load Balancer Integrations 
+
+1) ALB used for most ECS setups 
+    - works at L7 (HTTP), can route traffic to different containers based on request
+2) NLB
+    - L4 - for high performance applications
+3) Classic Load Balancer (CLB)
+    - no advanced features
+
+## ECR
+
+- Container image hub on the cloud
+- Private and public repositories 
+- Integrated with ECS, backed by S3 - images stored securely
+- Access controlled by IAM
+- If there are errors, check IAM permissions
