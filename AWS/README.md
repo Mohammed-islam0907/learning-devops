@@ -386,3 +386,8 @@ How much:
 
 3) AWS Fargate
 - Just define memory and CPU required - AWS handles rest
+
+## What is Serverless?
+
+- Don't need to worry about infastructure - just worry about your code
+- Doen't mean there are no servers
