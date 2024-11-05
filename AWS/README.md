@@ -391,3 +391,21 @@ How much:
 
 - Don't need to worry about infastructure - just worry about your code
 - Doen't mean there are no servers
+
+**Serverless in AWS**
+
+- AWS Lamda
+- DynamoDB
+- AWS Cognito 
+- API Gateway - 
+- Amazon S3
+- SNS & SQS
+- Fargate
+- and more
+
+## AWS Lambda
+
+**EC2 vs Lambda**
+
+- Lambda lets you focus on the code, without worrying about the infastucture or scaling, unlike EC2, where you pay for the time the instance is running
+ 
