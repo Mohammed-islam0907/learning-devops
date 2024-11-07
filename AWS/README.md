@@ -415,3 +415,10 @@ How much:
  2) Route53 - AWS's DNS service 
  3) CloudFront - Ddelivers content from nearest location to users
 
+
+## CIDR 
+
+- CIDR: Method of allocating IP adresses
+![CIDR](../AWS/images/CIDR.png)
+
+ 
