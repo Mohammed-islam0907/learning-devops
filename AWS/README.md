@@ -422,3 +422,25 @@ How much:
 ![CIDR](../AWS/images/CIDR.png)
 
  
+ ## Internet Gateway (IGW)
+
+ - Allows resources e.g. EC2 instance in a VPC to connect to the internet 
+ - Created sperately from VPC 
+
+## NAT Gateway
+
+- Lets private instances acces internet without exposing them to the internet - security 
+ n
+
+## NACL
+
+- Filters traffic coming into subnet 
+- If inbound rule permits the traffic, it allows it through 
+
+## VPC Peering
+
+- Connecting 2 VPC's 
+- Both private= Mustn't have overlapping CIDRs
+- Must update route tables in each VPC subnet 
+- Useful when you have different departments and data needs to be shared, without sharing acros public internet - for security
+- 
