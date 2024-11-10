@@ -461,4 +461,7 @@ How much:
 - Not because can't acquire IPv6, but because no IPv4 (limited)
 - Create nre IPv4 CIDR in subnet
 
+## Route 53
 
+- Authoritative DNS - have full control of DNS records
+- **Hosted Zones** - backbone of how route 53 manages traffic - whether public or within privat VPC's
