@@ -468,7 +468,7 @@ How much:
 
 ## How DNS Works
 
-- User searchs example.com into browser
+- User searches example.com into browser
 - Request goes to local DNS server (mnaged by ISP)
 - If IP isn't cached in the DNS server, it asked the higher authorities - asks Root DNS server
 - It directs the DNS server to TLD DNS server (TLD handles .com), which directs DNS to SLD DNS Server, which is managed by GoDaddy, Amazon etc.
