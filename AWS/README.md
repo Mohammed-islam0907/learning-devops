@@ -482,4 +482,10 @@ How much:
     - Value - target IP address
     - Routing policy - how Route 53 repsonds to queries 
     - TTL (Time to Live) - Amount of time the record is cached at DNS servers
-    
+
+## Route 53 Record Types
+
+- A - maps hostname (example.com) to IPv4 (192....)
+- AAAA - maps hostname to IPv6
+- CNAME - Maps hostname to another hostname 
+- NS - Name Servers for the Hosted Zones - control how traffic is routed for a domain
