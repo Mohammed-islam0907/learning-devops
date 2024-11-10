@@ -465,3 +465,6 @@ How much:
 
 - Authoritative DNS - have full control of DNS records
 - **Hosted Zones** - backbone of how route 53 manages traffic - whether public or within privat VPC's
+
+## How DNS Works
+
