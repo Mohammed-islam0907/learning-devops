@@ -443,4 +443,8 @@ How much:
 - Both private= Mustn't have overlapping CIDRs
 - Must update route tables in each VPC subnet 
 - Useful when you have different departments and data needs to be shared, without sharing acros public internet - for security
-- 
+
+## VPC Endpoints 
+
+- All AWS Services are publicly exposed publicly
+- VPC Endpoints (powered by AWS PrivateLink) allows access to these services using private network 
