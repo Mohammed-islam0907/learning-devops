@@ -473,3 +473,13 @@ How much:
 - If IP isn't cached in the DNS server, it asked the higher authorities - asks Root DNS server
 - It directs the DNS server to TLD DNS server (TLD handles .com), which directs DNS to SLD DNS Server, which is managed by GoDaddy, Amazon etc.
 - This server knows the IP address of example.com, which returns it to the DNS Server and then to the browser 
+
+## Route 53 Records
+
+- Each record contains:
+    - Domain
+    - Record type - A or AAAA
+    - Value - target IP address
+    - Routing policy - how Route 53 repsonds to queries 
+    - TTL (Time to Live) - Amount of time the record is cached at DNS servers
+    
