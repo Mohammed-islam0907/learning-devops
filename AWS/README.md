@@ -454,3 +454,9 @@ How much:
 - Every IPv6 is public 
 - :: means all 8 segments are 0
 - EC2 instances get private IPv4 and public IPv6
+
+**Trubleshoting IPv6**
+- Subnet needs IPv4 to launch EC2 instance
+- Not because can't acquire IPv6, but because no IPv4 (limited)
+- Create nre IPv4 CIDR in subnet
+-
