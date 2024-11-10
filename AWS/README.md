@@ -459,7 +459,7 @@ How much:
 **Trubleshoting IPv6**
 - Subnet needs IPv4 to launch EC2 instance
 - Not because can't acquire IPv6, but because no IPv4 (limited)
-- Create nre IPv4 CIDR in subnet
+- Create more IPv4 CIDR in subnet
 
 ## Route 53
 
