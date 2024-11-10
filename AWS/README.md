@@ -448,6 +448,7 @@ How much:
 
 - All AWS Services are publicly exposed publicly
 - VPC Endpoints (powered by AWS PrivateLink) allows access to these services using private network 
+- Must be used with NLB & ENI
 
 ## IPv6
 
@@ -459,4 +460,5 @@ How much:
 - Subnet needs IPv4 to launch EC2 instance
 - Not because can't acquire IPv6, but because no IPv4 (limited)
 - Create nre IPv4 CIDR in subnet
--
+
+
