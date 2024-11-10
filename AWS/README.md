@@ -448,3 +448,9 @@ How much:
 
 - All AWS Services are publicly exposed publicly
 - VPC Endpoints (powered by AWS PrivateLink) allows access to these services using private network 
+
+## IPv6
+
+- Every IPv6 is public 
+- :: means all 8 segments are 0
+- EC2 instances get private IPv4 and public IPv6
