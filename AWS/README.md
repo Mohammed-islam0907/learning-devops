@@ -494,4 +494,11 @@ How much:
 
 - How long DNS is cached before refreshed
 - High TTL e.g. 24 hrs
-- 
+
+## Route 53 - Alias  Records Targets
+
+- Can map custom domains with:
+- ELB
+- S3 websites 
+- etc.
+- Can't set Alias record for EC2 DNS name - use CNAME
