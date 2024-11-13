@@ -507,10 +507,12 @@ How much:
 
 1) S3 Bucket
     - Good for distributing files like images, videos, static content
-    - Enhanced security using Origin COntrol Access (OAC)
+    - Enhanced security using Origin Control Access (OAC)
 
 2) Custom Origin (HTTP)
     - ALB
     - EC2 instance
     - S3 website
     - Any HTTP backend you want
+
+Cloudfront + S3 - secure and fast access to data 
