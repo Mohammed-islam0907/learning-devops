@@ -489,3 +489,9 @@ How much:
 - AAAA - maps hostname to IPv6
 - CNAME - Maps hostname to another hostname 
 - NS - Name Servers for the Hosted Zones - control how traffic is routed for a domain
+
+## Route 53 - Time To Live (TTL)
+
+- How long DNS is cached before refreshed
+- High TTL e.g. 24 hrs
+- 
