@@ -502,3 +502,15 @@ How much:
 - S3 websites 
 - etc.
 - Can't set Alias record for EC2 DNS name - use CNAME
+
+## Cloudfront - origins
+
+1) S3 Bucket
+    - Good for distributing files like images, videos, static content
+    - Enhanced security using Origin COntrol Access (OAC)
+
+2) Custom Origin (HTTP)
+    - ALB
+    - EC2 instance
+    - S3 website
+    - Any HTTP backend you want
