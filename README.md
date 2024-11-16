@@ -14,7 +14,7 @@
 
 - 📫 How to reach me **https://www.linkedin.com/in/mohammed-islam-735a85262/**
 
-- ⚡ Fun fact **I came from a construction background and started landed my first Tech role in August 2024**
+- ⚡ Fun fact **I came from a construction background and landed my first Tech role in August 2024**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
