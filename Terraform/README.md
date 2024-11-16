@@ -13,3 +13,10 @@
 
 - This is the blueprint
 - Idempotency - Terraform configuration produces same result, despite how many times you run it and if a change is made to the configuration, it wouldn't cause a complete change - just applies that particular change 
+
+## Terraform Plan
+
+- + Create
+- ~ Update/modify
+- - destroy
+
