@@ -31,7 +31,7 @@
 - Automatic locking - preventing users making changes at same time, preventing corruption
 - Auto backup and security - ensuring infastructure state is secure and recoverable
 
-- Good practices:
+Good practices:
 - regular backups 
- - state locking 
- - 
+- state locking 
+- 
