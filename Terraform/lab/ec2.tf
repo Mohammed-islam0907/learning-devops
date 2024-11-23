@@ -10,5 +10,8 @@ resource "aws_instance" "import" {
      tags = {
     Name = "terraform-import"
   }
+
+  
 }
+
 
