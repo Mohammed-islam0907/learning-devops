@@ -20,18 +20,3 @@
 - ~ Update/modify
 - - destroy
 
-## Local State Files
-
-- TF stores siles on local machines 
-- Don't need to worry about other people impacting your SF
-
-## Remote State Files
-
-- Collaborative envionment 
-- Automatic locking - preventing users making changes at same time, preventing corruption
-- Auto backup and security - ensuring infastructure state is secure and recoverable
-
-Good practices:
-- regular backups 
-- state locking 
-- 

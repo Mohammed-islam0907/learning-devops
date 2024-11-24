@@ -10,4 +10,4 @@ Automatically integrating code changes frequently from multiple contributors
 
 ## Continuous Delivery
 
-- Ensure software can be released reliably at any time
+- Ensure software can be released reliably at any time 
