@@ -1,6 +1,6 @@
 name: my first CICD workflows
 
-on: [push]
+on: push
 
 jobs: 
   build:
