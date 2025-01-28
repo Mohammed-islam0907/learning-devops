@@ -1,0 +1,1 @@
+# Task: Deploy an EC2 instance with Terraform, using variables
